@@ -1,13 +1,16 @@
-﻿string s_a = Console.ReadLine();
-int a = int.Parse(s_a);
+﻿Console.WriteLine("Введите первое число: ");
+string s_a = Console.ReadLine();
+Console.WriteLine("Введите второе число: ");
 string s_b = Console.ReadLine();
+
+int a = int.Parse(s_a);
 int b = int.Parse(s_b);
 
-if(a<b)
+if (a > b)
 {
-    Console.Write(b);
+    Console.Write("Число " + a + " больше числа " + b);
 }
-if(a>b)
+else
 {
-    Console.Write(a);
-}
+    Console.Write("Число " + b + " больше числа " + a);
+} 
